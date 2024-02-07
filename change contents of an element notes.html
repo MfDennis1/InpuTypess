@@ -11,10 +11,36 @@
     <h1></h1>
     <div class="row">
     <div>
-      <label for="first">First </label>
-<input type="text" id="first" name="first_name" placeholder="jane">
+        <label for="first">First name  </label>
+        <input type="text" id="first" name="first_name" placeholder="jane">
+        <div>
+        <label for="first">Last name </label>
+        <input type="text" id="last" name="last_name" placeholder="doe">
+        <p></p>
     </div>
     </div>
     </div>
+    </div>
+        <script>
+            const firstname = document.getElementById('first')
+            const lastname = document.getElementById('last')
+            const full = document.querySelector('p')
+            firstname.addEventListener('change', function (e){
+                let first = firstname.value;
+                let last = lastname.value;
+                let full = hello `${first} ${last}!`;
+                full.textContent = fullname;
+             lastname.addEventListener('change', function(e) {
+                let first = firstname.value;
+                let last = lastname.value;
+                let fullname = `hello ${first} ${last}!`;
+                full.textontent = fullname;
+        });
+
+
+
+
+        </script>
+
 </body>
 </html>
